@@ -1,0 +1,6 @@
+alias zshconfig="code ~/.zshrc"
+alias p10kconfig="code ~/.p10k.zsh"
+alias dotfiles="code ${PROJECTS}/dotfiles/"
+alias awsconfig="code ~/.aws/config"
+alias kubeconfig="code ~/.kube/config"
+alias etchosts="sudo vim /etc/hosts"
