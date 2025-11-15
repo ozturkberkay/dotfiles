@@ -6,6 +6,7 @@ brew "fastfetch"
 brew "powerlevel10k"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "python@3.14"
 brew "uv"
 
 cask "font-fira-code-nerd-font"
