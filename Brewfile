@@ -8,6 +8,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "python@3.14"
 brew "uv"
+brew "awscli@v2"
 
 cask "font-fira-code-nerd-font"
 cask "ghostty"
