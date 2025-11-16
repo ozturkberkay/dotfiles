@@ -32,6 +32,9 @@ export PATH="/opt/homebrew/bin:${PATH}"
 # Projects
 export PROJECTS="${HOME}/projects"
 
+# Projects: Sumscribe
+source "${PROJECTS}/sumscribe/src/sh/sumscribe/includes.sh"
+
 # AWS
 export AWS_REGION="us-east-1"
 export AWS_DEFAULT_REGION="us-east-1"
