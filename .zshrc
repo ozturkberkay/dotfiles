@@ -22,6 +22,9 @@ source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+setopt NO_NOMATCH
+unsetopt correct
+unsetopt correct_all
 
 # Terminal
 touch ~/.hushlogin
@@ -57,6 +60,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Claude
+export DISABLE_AUTOUPDATER=false
+export FORCE_AUTOUPDATE_PLUGINS=true
+export MAX_THINKING_TOKENS=63999
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
