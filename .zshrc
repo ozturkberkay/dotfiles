@@ -31,12 +31,19 @@ touch ~/.hushlogin
 
 # Path
 export PATH="/opt/homebrew/bin:${PATH}"
+export PATH="/Users/berkay/.cargo/bin:${PATH}"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+# export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Compiler flags
+# export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 # Projects
 export PROJECTS="${HOME}/projects"
 
 # Projects: Sumscribe
-source "${PROJECTS}/sumscribe/src/sh/sumscribe/includes.sh"
+# source "${PROJECTS}/sumscribe/src/sh/sumscribe/includes.sh"
 
 # AWS
 export AWS_REGION="us-east-1"
