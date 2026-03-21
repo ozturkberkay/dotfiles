@@ -33,11 +33,15 @@ touch ~/.hushlogin
 export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="/Users/berkay/.cargo/bin:${PATH}"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="/Users/berkay/.local/bin:$PATH"
 # export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Compiler flags
 # export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 # export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
+# Homebrew
+export HOMEBREW_NO_ENV_HINTS=1
 
 # Projects
 export PROJECTS="${HOME}/projects"
