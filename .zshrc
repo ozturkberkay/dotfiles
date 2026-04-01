@@ -32,7 +32,7 @@ touch ~/.hushlogin
 # Path
 export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="/Users/berkay/.cargo/bin:${PATH}"
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
 export PATH="/Users/berkay/.local/bin:$PATH"
 # export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
@@ -45,6 +45,8 @@ export HOMEBREW_NO_ENV_HINTS=1
 
 # Projects
 export PROJECTS="${HOME}/projects"
+export TOKENOVERFLOW_HOME="${PROJECTS}/tokenoverflow"
+source $TOKENOVERFLOW_HOME/scripts/src/includes.sh
 
 # Projects: Sumscribe
 # source "${PROJECTS}/sumscribe/src/sh/sumscribe/includes.sh"
@@ -79,3 +81,26 @@ export MAX_THINKING_TOKENS=63999
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> forge initialize >>>
+# !! Contents within this block are managed by 'forge zsh setup' !!
+# !! Do not edit manually - changes will be overwritten !!
+
+# Add required zsh plugins if not already present
+if [[ ! " ${plugins[@]} " =~ " zsh-autosuggestions " ]]; then
+    plugins+=(zsh-autosuggestions)
+fi
+if [[ ! " ${plugins[@]} " =~ " zsh-syntax-highlighting " ]]; then
+    plugins+=(zsh-syntax-highlighting)
+fi
+
+# Load forge shell plugin (commands, completions, keybindings) if not already loaded
+if [[ -z "$_FORGE_PLUGIN_LOADED" ]]; then
+    eval "$(forge zsh plugin)"
+fi
+
+# Load forge shell theme (prompt with AI context) if not already loaded
+if [[ -z "$_FORGE_THEME_LOADED" ]]; then
+    eval "$(forge zsh theme)"
+fi
+# <<< forge initialize <<<

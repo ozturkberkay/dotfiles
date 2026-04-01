@@ -1,12 +1,6 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "npx -y ccstatusline@latest",
-    "padding": 0
-  },
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true
   },
   "effortLevel": "high",
