@@ -1,9 +1,12 @@
 {
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
   "enabledPlugins": {
     "pyright-lsp@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true
   },
-  "effortLevel": "high",
   "autoMemoryEnabled": false,
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true
 }
