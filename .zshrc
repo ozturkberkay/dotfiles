@@ -59,3 +59,6 @@ source $HOME/.aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# bun completions
+[ -s "/Users/berkay/.bun/_bun" ] && source "/Users/berkay/.bun/_bun"

@@ -101,6 +101,9 @@ defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
 defaults write NSGlobalDomain AppleMetricUnits -bool false
 
+# Disable language switch popup
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled -bool false
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
